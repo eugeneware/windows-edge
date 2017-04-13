@@ -1,0 +1,39 @@
+{
+  "name": "windows-edge",
+  "version": "1.0.0",
+  "description": "Launch a new Microsoft Edge tab on Windows",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "node_modules/.bin/tape test/*.js",
+    "lint": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeneware/windows-edge"
+  },
+  "keywords": [
+    "launch",
+    "edge",
+    "ms-edge",
+    "microsoft",
+    "edge",
+    "microsoft edge",
+    "browser",
+    "launch",
+    "windows",
+    "launcher"
+  ],
+  "author": "Eugene Ware <eugene@noblesamurai.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/eugeneware/windows-edge/issues"
+  },
+  "dependencies": {
+    "tasklist": "^2.1.0"
+  },
+  "devDependencies": {
+    "semistandard": "^10.0.0",
+    "tape": "^4.4.0"
+  }
+}
