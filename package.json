@@ -1,6 +1,6 @@
 {
   "name": "windows-edge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Launch a new Microsoft Edge tab on Windows",
   "main": "index.js",
   "scripts": {
