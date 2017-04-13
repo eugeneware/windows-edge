@@ -55,5 +55,5 @@ were using, this might be annoying. You have been warned.
 
 This module also polls for the external termination (eg. user closing browser
 or external process killing the browser through `edge.kill()`). This poll
-happens every 5 seconds or so to avoid being rate limited by the operating
+happens every 2 seconds or so to avoid being rate limited by the operating
 system.
