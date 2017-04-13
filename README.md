@@ -49,8 +49,8 @@ tab you've spawned.
 ## Notes
 It's not possible to launch multiple instances of Microsoft Edge.
 So, launching a new URL will simply open a new tab in Microsoft Edge. It's
-not easy to close the tab that's opened either. Calling `ps.kill()
-to `true` will close down the whole browser. If you have other tabs that you
+not easy to close the tab that's opened either. Calling `ps.kill()`
+will close down the whole browser. If you have other tabs that you
 were using, this might be annoying. You have been warned.
 
 This module also polls for the external termination (eg. user closing browser
