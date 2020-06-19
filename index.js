@@ -1,11 +1,11 @@
-const exec = require('child_process').exec;
+const execFile = require('child_process').execFile;
 const EventEmitter = require('events');
 const tasklist = require('tasklist');
 
 module.exports = launch;
 function launch (opts, cb) {
   opts = Object.assign({ poll: true, pollInterval: 3000 }, opts);
-  exec('start microsoft-edge:' + opts.uri, (err, stdout, stderr) => {
+  execFile('start', ['microsoft-edge:' + opts.uri], (err, stdout, stderr) => {
     if (err) return cb(err);
     const ee = new EventEmitter();
 
@@ -55,7 +55,7 @@ function kill (ee) {
     if (edgeProcesses.length === 0) {
       return cb();
     } else {
-      exec('taskkill /F /IM MicrosoftEdge.exe /T', (err) => cb(err));
+      execFile('taskkill', ['/F', '/IM', 'MicrosoftEdge.exe', '/T'], (err) => cb(err));
     }
   });
 }
