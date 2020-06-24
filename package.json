@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm run lint",
-    "test": "node_modules/.bin/tape test/*.js",
+    "test": "tape test/*.js",
     "lint": "semistandard"
   },
   "repository": {
