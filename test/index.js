@@ -12,7 +12,7 @@ it('should be able to launch edge and shut it down', function (t) {
       // wait for processes to shut down
       setTimeout(() => {
         tasklist().then(data => {
-          let edgeProcesses = data.filter((p) =>
+          const edgeProcesses = data.filter((p) =>
             ~['MicrosoftEdge.exe', 'MicrosoftEdgeCP.exe'].indexOf(p.imageName));
           t.equals(edgeProcesses.length, 0, 'Edge is dead');
           t.end();
@@ -40,7 +40,7 @@ it('should be able to launch edge and get notified when the Edge proccess is ext
       // wait for processes to shut down
       setTimeout(() => {
         tasklist().then(data => {
-          let edgeProcesses = data.filter((p) =>
+          const edgeProcesses = data.filter((p) =>
             ~['MicrosoftEdge.exe', 'MicrosoftEdgeCP.exe'].indexOf(p.imageName));
           t.equals(edgeProcesses.length, 0, 'Edge is dead');
           t.end();

@@ -32,11 +32,10 @@ function launch (opts, cb) {
 
 function getEdgeTasks (cb) {
   tasklist().then(data => {
-    let edgeProcesses = data.filter((p) =>
+    const edgeProcesses = data.filter((p) =>
       ~['MicrosoftEdge.exe', 'MicrosoftEdgeCP.exe'].indexOf(p.imageName));
     cb(null, edgeProcesses);
-  })
-  .catch(cb);
+  }).catch(cb);
 }
 
 module.exports.kill = kill;
