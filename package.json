@@ -30,7 +30,7 @@
     "url": "https://github.com/eugeneware/windows-edge/issues"
   },
   "dependencies": {
-    "tasklist": "^2.1.0"
+    "tasklist": "^4.0.1"
   },
   "devDependencies": {
     "semistandard": "^14.2.0",
